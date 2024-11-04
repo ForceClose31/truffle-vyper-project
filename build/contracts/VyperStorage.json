@@ -1,0 +1,388 @@
+{
+  "contractName": "VyperStorage",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "name": "new_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "get",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x61005b61000f60003961005b6000f35f3560e01c60026001821660011b61005701601e395f51565b6360fe47b1811861004f57602436103417610053576004355f55005b636d4ce63c811861004f5734610053575f5460405260206040f35b5f5ffd5b5f80fd0034001884185b810400a1657679706572830004000013",
+  "deployedBytecode": "0x5f3560e01c60026001821660011b61005701601e395f51565b6360fe47b1811861004f57602436103417610053576004355f55005b636d4ce63c811861004f5734610053575f5460405260206040f35b5f5ffd5b5f80fd00340018",
+  "deployedSourceMap": {
+    "breakpoints": [],
+    "error_map": {
+      "42": "bad calldatasize or callvalue",
+      "45": "bad calldatasize or callvalue",
+      "65": "bad calldatasize or callvalue",
+      "68": "bad calldatasize or callvalue",
+      "82": "fallback function"
+    },
+    "pc_ast_map": {
+      "0": [
+        0,
+        0
+      ],
+      "46": [
+        0,
+        16
+      ],
+      "49": [
+        0,
+        12
+      ],
+      "51": [
+        0,
+        6
+      ],
+      "69": [
+        0,
+        23
+      ],
+      "76": [
+        0,
+        20
+      ],
+      "78": [
+        0,
+        20
+      ]
+    },
+    "pc_ast_map_item_keys": [
+      "source_id",
+      "node_id"
+    ],
+    "pc_breakpoints": [],
+    "pc_jump_map": {
+      "0": "-",
+      "23": "-",
+      "24": "-",
+      "35": "-",
+      "45": "-",
+      "52": "-",
+      "63": "-",
+      "68": "-",
+      "79": "-",
+      "83": "-"
+    },
+    "pc_pos_map": {
+      "0": [
+        1,
+        0,
+        10,
+        27
+      ],
+      "46": [
+        5,
+        23,
+        5,
+        32
+      ],
+      "49": [
+        5,
+        4,
+        5,
+        20
+      ],
+      "51": [
+        4,
+        0,
+        5,
+        32
+      ],
+      "69": [
+        10,
+        11,
+        10,
+        27
+      ],
+      "76": [
+        9,
+        0,
+        10,
+        27
+      ],
+      "78": [
+        9,
+        0,
+        10,
+        27
+      ]
+    },
+    "pc_pos_map_compressed": "0:161:0:-;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1:-;-1:-1:-1:-;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1:-;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1:-;85:9:0;-1:-1:-1;-1:-1:-1;66:16:0;-1:-1:-1;32:62:0;-1:-1:-1:-;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1:-;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1:-;145:16:0;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;112:49:0;-1:-1:-1;112:49:0;-1:-1:-1:-;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1:-;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1;-1:-1:-1"
+  },
+  "source": "stored_data: uint256\n\n@external\ndef set(new_value : uint256):\n    self.stored_data = new_value\n\n@external\n@view\ndef get() -> uint256:\n    return self.stored_data\n",
+  "sourcePath": "E:\\Blockchain\\vyper\\contracts\\VyperStorage.vy",
+  "ast": {
+    "ast_type": "Module",
+    "body": [
+      {
+        "annotation": {
+          "ast_type": "Name",
+          "col_offset": 13,
+          "end_col_offset": 20,
+          "end_lineno": 1,
+          "id": "uint256",
+          "lineno": 1,
+          "node_id": 4,
+          "src": "13:7:0"
+        },
+        "ast_type": "VariableDecl",
+        "col_offset": 0,
+        "end_col_offset": 20,
+        "end_lineno": 1,
+        "is_constant": false,
+        "is_immutable": false,
+        "is_public": false,
+        "is_transient": false,
+        "lineno": 1,
+        "node_id": 1,
+        "src": "0:20:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 11,
+          "end_lineno": 1,
+          "id": "stored_data",
+          "lineno": 1,
+          "node_id": 2,
+          "src": "0:11:0"
+        },
+        "value": null
+      },
+      {
+        "args": {
+          "args": [
+            {
+              "annotation": {
+                "ast_type": "Name",
+                "col_offset": 20,
+                "end_col_offset": 27,
+                "end_lineno": 4,
+                "id": "uint256",
+                "lineno": 4,
+                "node_id": 9,
+                "src": "52:7:0"
+              },
+              "arg": "new_value",
+              "ast_type": "arg",
+              "col_offset": 8,
+              "end_col_offset": 27,
+              "end_lineno": 4,
+              "lineno": 4,
+              "node_id": 8,
+              "src": "40:19:0"
+            }
+          ],
+          "ast_type": "arguments",
+          "col_offset": 8,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 27,
+          "end_lineno": 4,
+          "lineno": 4,
+          "node_id": 7,
+          "src": "40:19:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 32,
+            "end_lineno": 5,
+            "lineno": 5,
+            "node_id": 11,
+            "src": "66:28:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "stored_data",
+              "col_offset": 4,
+              "end_col_offset": 20,
+              "end_lineno": 5,
+              "lineno": 5,
+              "node_id": 12,
+              "src": "66:16:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 4,
+                "end_col_offset": 8,
+                "end_lineno": 5,
+                "id": "self",
+                "lineno": 5,
+                "node_id": 13,
+                "src": "66:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Name",
+              "col_offset": 23,
+              "end_col_offset": 32,
+              "end_lineno": 5,
+              "id": "new_value",
+              "lineno": 5,
+              "node_id": 16,
+              "src": "85:9:0"
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 3,
+            "id": "external",
+            "lineno": 3,
+            "node_id": 18,
+            "src": "23:8:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 32,
+        "end_lineno": 5,
+        "lineno": 4,
+        "name": "set",
+        "node_id": 6,
+        "pos": null,
+        "returns": null,
+        "src": "32:62:0"
+      },
+      {
+        "args": {
+          "args": [],
+          "ast_type": "arguments",
+          "col_offset": 0,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 3,
+          "end_lineno": 9,
+          "lineno": 9,
+          "node_id": 21,
+          "src": "112:3:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Return",
+            "col_offset": 4,
+            "end_col_offset": 27,
+            "end_lineno": 10,
+            "lineno": 10,
+            "node_id": 22,
+            "src": "138:23:0",
+            "value": {
+              "ast_type": "Attribute",
+              "attr": "stored_data",
+              "col_offset": 11,
+              "end_col_offset": 27,
+              "end_lineno": 10,
+              "lineno": 10,
+              "node_id": 23,
+              "src": "145:16:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 11,
+                "end_col_offset": 15,
+                "end_lineno": 10,
+                "id": "self",
+                "lineno": 10,
+                "node_id": 24,
+                "src": "145:4:0"
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 7,
+            "id": "external",
+            "lineno": 7,
+            "node_id": 27,
+            "src": "97:8:0"
+          },
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 5,
+            "end_lineno": 8,
+            "id": "view",
+            "lineno": 8,
+            "node_id": 29,
+            "src": "107:4:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 27,
+        "end_lineno": 10,
+        "lineno": 9,
+        "name": "get",
+        "node_id": 20,
+        "pos": null,
+        "returns": {
+          "ast_type": "Name",
+          "col_offset": 13,
+          "end_col_offset": 20,
+          "end_lineno": 9,
+          "id": "uint256",
+          "lineno": 9,
+          "node_id": 31,
+          "src": "125:7:0"
+        },
+        "src": "112:49:0"
+      }
+    ],
+    "col_offset": 0,
+    "doc_string": null,
+    "end_col_offset": 27,
+    "end_lineno": 10,
+    "lineno": 1,
+    "name": null,
+    "node_id": 0,
+    "path": "/VyperStorage.vy",
+    "resolved_path": "/VyperStorage.vy",
+    "source_id": 0,
+    "source_sha256sum": "026678155de374450e728c5813325ebcd0028b486c991746e0873aad5c12d6a3",
+    "src": "0:161:0"
+  },
+  "compiler": {
+    "name": "vyper",
+    "version": "0.4.0+commit.e9db8d9"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xD4C58d0EE2Ba14e50d2dA20b483D1FA6bb494f76",
+      "transactionHash": "0x54ad804dfd899702222ed4156d7384b17bdb807ab3d41ac5775326337a16fbdb"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-11-04T11:50:50.855Z",
+  "devdoc": {},
+  "userdoc": {}
+}
